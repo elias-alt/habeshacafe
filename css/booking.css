@@ -1,0 +1,65 @@
+#top{
+    width: 100%;
+    float: left;
+}
+.top1{
+    width: 70%;
+    margin:0 15% 0 15%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../image/booking.jfif')no-repeat;
+    background-size: cover;    
+}
+#booking{
+    width: 100%;
+    float: left;
+}
+.booking1{
+    width: 70%;
+    margin:10vh 15% 0 15%;
+    border: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    justify-content: center;
+}
+.booking_form .frm{
+    width: 47%;
+    float: left;
+    margin-top: 30px;
+    margin-left:10px;
+   
+}
+.frm input{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.times input{
+    padding: 5px 16px;
+    margin: 5px;
+}
+.txts p{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.txts{
+    border-bottom: 1px solid #ddd;
+}
+.sbmt{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+.sbmt input{
+    border: none;
+    background-color: rgb(3, 211, 3);
+    margin: 5px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    color: #ddd;
+}
+.sbmt input:hover{
+    opacity: 0.5;
+}

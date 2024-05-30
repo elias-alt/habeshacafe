@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=McLaren&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <script defer src="./js/index.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <div class="navmobile" onclick="display()">
+            <span class="spana"></span>
+            <span class="spanb"></span>
+            <span class="spanc"></span>
+        </div>
+        <div class="sidenavb" >
+            <a class="sidea" href="" onclick="close()">X</a>
+            <img src="./image/logo1.png" alt="logo" width="150px" height="25px" style="float: left; cursor: pointer; margin-top: 5vh;margin-left: 5vh;">
+            <ul class="sul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="Order.html">Order</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+            <div class="dropdown" style="margin-left: 5vh;margin-bottom: 5vh;">
+                <button style="    background-color: rgb(218, 218, 213);" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Language
+                </button>
+                <ul class="dropdown-menu" style="color: #555;">
+                  <li><a class="dropdown-item" href="#">EN</a></li>
+                </ul>
+              </div>
+            <div class="cont" style="margin-left: 5vh;">
+                <p style="font-size: 12px;"><i class="fa-solid fa-phone"></i> +2514 9561 3315</p>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <div class="logo">
+            <a href="./index.html" style="text-decoration: none;"><img src="./image/logo1.png" alt="logo" width="auto" height="35px" style="cursor: pointer;"></a>
+        </div>
+        <div class="social">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-phone"></i>
+            <p style="font-size: 12px;">+2514 9561 3315</p>
+        </div>
+        <ul class="ulul">
+            <li class="lili"><a href="index.html">Home</a></li>
+            <li class="lili"><a href="booking.html">Booking</a></li>
+            <li class="lili"><a href="Order.html">Order</a></li>
+            <li class="lili"><a href="catering.html">Catering</a></li>
+            <li class="lili"><a href="contactus.html">Contact Us</a></li>
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    lang
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">EN</a></li>
+                  </ul>
+                </div>
+              </div>
+        </ul>
+    </div>
+    <div id="menu">
+        <div class="menu1">
+            <p style="font-weight: bolder;font-size: 2.5rem;color: aliceblue;">Menu</p>
+            <p style="font-weight: 700;font-size: larger;color: chartreuse;">Home/menu</p>
+        </div>
+    </div>
+    <div class="menua">
+        <div style="width: 70%;margin: 5vh 15% 0 15%;">
+            <p style="text-align: center;font-size: 2.5rem;font-weight: bolder;">OUR MENU</p>
+        </div>
+        <div class="menua1">
+            <button class="btnfood1 bton" onclick="food1()">Breakfast</button>
+            <button class="btnfood2 bton" onclick="food2()">Meat dishes</button>
+            <button class="btnfood3 bton" onclick="food3()">Vegeterian</button>
+            <button class="btnfood4 bton" onclick="food4()">vegan</button>
+            <button class="btnfood5 bton" onclick="food5()">Combos</button>
+            <button class="btnfood6 bton" onclick="food6()">Childrens Menu</button>
+            <button class="btnfood7 bton" onclick="food7()">Cold Drinks</button>
+            <button class="btnfood8 bton" onclick="food8()">Warm Drinks</button>
+            <button class="btnfood9 bton" onclick="food9()">Wines</button>
+            <button class="btnfood10 bton" onclick="food10()">Dessert</button>
+            <div class="div1">
+                <p style="text-align: center;font-weight: 700;font-size: 1.3rem;">Breakfast</p>
+                <div class="mainmenu">
+                    <div class="mms1">
+                        <img class="image" src="./image/doro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Belgian breakfast bread with chocolate.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Chokolate cookies <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$2.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/doro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Pieces of injera in spicy sauce with Ethiopian butter.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Firfir <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$8.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/doro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Ful with extra egg.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Special Ful<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$12.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/doro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Belgian croissant.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Croissant <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$2.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/doro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">A dish with brown beans in garlic, onions, tomatoes and peppers. Served with baguette.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">FUL<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$10.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/doro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Scrambled or omelette eggs with peppers, tomatoes and herbs</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Omelette Eggs<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$5.50</span></p>
+                    </div> 
+                </div>  
+            </div>
+            <div class="div2 asd">
+                <p style="text-align: center;font-weight: 700;font-size: 1.3rem;">meat dish</p>
+                <div class="mainmenu">
+                    
+                    <div class="mms1">
+                        <img class="image" src="./image/shiro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">A traditional Ethiopian dish with chicken and egg in a (very) spicy sauce. Prepared with Ethiopian butter.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Doro Wot<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$20.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/shiro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Kale with Tibs and Ethiopian butter.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Beg Wot Alicha <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$17.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/shiro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Ful with extra egg.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Gomen Be Siga<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$16.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/shiro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Finely ground beef in spicy berbere sauce, prepared with Ethiopian butter and herbs.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Minchet Abish Key <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$15.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/shiro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Choice between beef and lamb. Prepared with fresh peppers, herbs, slices of tomatoes and Ethiopian butter. Can be prepared both mildly and spicy.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Tibs<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$17.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/shiro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">A milder version of the doro wot in which we replace the spicy (berbere) herbs with soft turmeric with ginger and garlic.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Doro Wot Alicha<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$20.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/shiro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Lamb in spicy berbere sauce and Ethiopian butter.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Beg Wot Key<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$17.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/shiro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Spicy seasoned raw beef with the choice of frying (average done and well fried). Prepared with herbs and Ethiopian butter.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Kitfo<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$17.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/shiro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Finely ground beef in a mild sauce with turmeric, ginger, garlic, Ethiopian butter and herbs.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Minchete Abish Alicha<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$15.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/shiro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">A sauce prepared with Tibse (see description) and pieces of injera</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Tibs Firfir<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$17.00</span></p>
+                    </div> 
+                </div> 
+            </div>
+             <div class="div3 asd">
+                <p style="text-align: center;font-weight: 700;font-size: 1.3rem;">Vegeterian</p>
+                <div class="mainmenu">
+                    <div class="mms1">
+                        <img class="image" src="./image/food1.jpg" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Pieces of injera in spicy sauce with Ethiopian butter</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Firfir <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$10.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/food1.jpg" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">A sauce with lentils in spicy berbere sauce with Ethiopian butter</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Misir Wot<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$12.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/food1.jpg" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Fried potatoes, white cabbage, carrots with fresh herbs and Ethiopian butter.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Tikel Gomen<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$12.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/food1.jpg" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Kale with fried onions, potato and Ethiopian butter. Mildly spiced.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Gomen Wot <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$12.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/food1.jpg" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">A sauce with ground chickpeas, Ethiopian spicy herbs and butter.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Shiro Wot<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$13.00</span></p>
+                    </div> 
+                </div>            
+            </div>
+            <div class="div4 asd">
+                <p style="text-align: center;font-weight: 700;font-size: 1.3rem;">VEGAN</p>
+                <div class="mainmenu">
+                    <div class="mms1">
+                        <img class="image" src="./image/food2.jpg" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Pieces of injera in spicy sauce.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Firfir <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$8.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/food2.jpg" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">A sauce with lentils in spicy berbere sauce.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Misir Wot <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$12.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/food2.jpg" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Fried potatoes, white cabbage, carrots with fresh herbs.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Tikel Gomen<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$12.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/food2.jpg" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Kale with fried onions and potatoes. Mildly spiced.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Gomen Wot <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$12.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/food2.jpg" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">A sauce with Ethiopian spicy herbs and ground chickpeas.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Shiro Wot<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$13.00</span></p>
+                    </div> 
+                </div>             
+            </div>
+            <div class="div5 asd">
+                <p style="text-align: center;font-weight: 700;font-size: 1.3rem;">Combos
+                <span style="font-weight: 500;font-size: 1,1rem;">(A BIG PLATE WITH DIFFERENT MEALS)</span></p>
+                <div class="mainmenu">
+                    <div class="mms1">
+                        <img class="image" src="./image/doro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Choose between spicy and mild. Doro Wot (chicken), Michet Abish (beef) en Beg Wot (lamb). Served with Ethiopian tomato salad.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Habesha Combo</p>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bold;">For 1 Person <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$35.00</span></p>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bold;">For 2 Person <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$45.00</span></p>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bold;">For 3 Person <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$55.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/doro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Choose between spicy and mild. Vegan dishes mix: Misir Wot, Tikel Gomen, Shiro Wot en Gomen Wot. Served with Ethiopian tomato salad.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Abyssinia Combo</p>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bold;">For 1 Person <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$25.00</span></p>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bold;">For 2 Person <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$30.00</span></p>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bold;">For 3 Person <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$35.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/doro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Choose between spicy and mild. Michet Abish, Beg Wot en Tibse. Served with Ethiopian tomato salad.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Mehaberawi Combo</p>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bold;">For 1 Person <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$30.00</span></p>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bold;">For 2 Person <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$40.00</span></p>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bold;">For 3 Person <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$50.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/doro.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Choose between spicy and mild. Vegetarian dishes mix: Misir Wot, Tikel Gomen, Shiro Wot. Served with Ethiopian tomato salad.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Ethiopia Combo</p>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bold;">For 1 Person <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$27.00</span></p>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bold;">For 2 Person <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$35.00</span></p>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bold;">For 3 Person <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$40.00</span></p>
+                    </div> 
+                </div>             
+            </div>
+            <div class="div6 asd">
+                <p style="text-align: center;font-weight: 700;font-size: 1.3rem;">Childrens Menu</p>
+                <div class="mainmenu">
+                    <div class="mms1">
+                        <img class="image" src="./image/ful.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Bolognaise pasta made in an Ethiopian way.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Habesha Spaghetti<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$10.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/ful.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Lamb prepared with mild herbs and Ethiopian butter.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Alicha Beg Wot<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$15.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/ful.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">A sauce with ground chickpeas, Ethiopian herbs and butter. (Not Spicy).</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Alicha Shiro Wot<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$11.00</span></p>
+                    </div> 
+                </div> 
+            </div>
+            <div class="div7 asd">
+                <p style="text-align: center;font-weight: 700;font-size: 1.3rem;">Cold Drink</p>
+                <div class="mainmenu">
+                    <div class="mms1">
+                        <img class="image" src="./image/bull.jfif" alt="image" width="100%" height="100%">
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Berr <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$3.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/bull.jfif" alt="image" width="100%" height="100%">
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Soft Drink <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$3.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/bull.jfif" alt="image" width="100%" height="100%">
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Red Bull<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$3.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/bull.jfif" alt="image" width="100%" height="100%">
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Water (Still And Sparkling) <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$3.00</span></p>
+                    </div>  
+                </div> 
+            </div>
+            <div class="div8 asd">
+                <p style="text-align: center;font-weight: 700;font-size: 1.3rem;">Warm Drink</p>
+                <div class="mainmenu">
+                    <div class="mms1">
+                        <img class="image" src="./image/coffee.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Less strong coffee in a mug.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Americano <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$3.50</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/coffee.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Espresso with hot milk and milk foam.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Cappuccino <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$3.50</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/coffee.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Short and snappy coffee.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Espresso<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$3.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/coffee.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Ethiopian espresso coffee in the typical Jebena. The serving starts with baking the coffee beans on site. The experience begins with the wonderful smell of authentic coffee.(per person).</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Jebena Buna <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$5.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/coffee.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Herbal tea.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Tea<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$2.50</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/coffee.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Black coffee.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Coffee<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$3.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/coffee.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Hot drink based on tea, spices & steamed milk.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Chai Latte<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$3.50</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/coffee.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Steamed milk with Belgian chocolate.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Chocolate Milk<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$3.50</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/coffee.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Steamed milk with espresso</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Latte (Coffee With Milk)<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$3.50</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/coffee.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Herbal tea with milk.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Tea With Milk<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$3.00</span></p>
+                    </div> 
+                </div> 
+            </div>
+            <div class="div9 asd">
+                <p style="text-align: center;font-weight: 700;font-size: 1.3rem;">Wine</p>
+                <div class="mainmenu">
+                    <div class="mms1">
+                        <img class="image" src="./image/wine.jfif" alt="image" width="100%" height="100%">
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Proseco <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$6.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/wine.jfif" alt="image" width="100%" height="100%">
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">White Wine<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$5.50</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/wine.jfif" alt="image" width="100%" height="100%">
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">RedWine<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$6.00</span></p>
+                    </div>  
+                </div> 
+            </div>
+            <div class="div10 asd">
+                <p style="text-align: center;font-weight: 700;font-size: 1.3rem;">Dessert</p>
+                <div class="mainmenu">
+                    <div class="mms1">
+                        <img class="image" src="./image/booking2.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">The Dutch classic.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Cheesecake <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$5.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/booking2.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Choose from our diverse range of kids ice.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Kids Ice <span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$3.50</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/booking2.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">American pancakes. Natural or with sugar.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Pancakes<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$5.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/booking2.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">American pancakes with Belgian ice cream.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Pancakes With Ice Cream<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$7.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/booking2.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Choose from a diverse range of Belgian ice cream.(Scoop)</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Ice Cream<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$2.50</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/booking2.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">Vanilla ice cream with chocolate syrup and whipped cream.</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">Dame Blanche<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$5.00</span></p>
+                    </div> 
+                    <div class="mms1">
+                        <img class="image" src="./image/booking2.jfif" alt="image" width="100%" height="100%">
+                        <div class="overlay">
+                            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #000;">American pancakes with syrup</p>
+                        </div>
+                        <p style="border-bottom: 1px solid #ddd;padding-bottom: 10px;font-weight: bolder;">American Pancakes<span style="float: right;color: gold;padding: 5px 10px;border-left: 1px solid #ddd;">$6.00</span></p>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer1">
+            <div class="footer11">
+                <p style="font-weight: 800;font-size: larger;"><i class="fa-solid fa-house fa-lg" style="color: #63E6BE;"></i> Habesha Cafe</p>
+                <p> <i class="fa-regular fa-hand-point-right" style="color: #FFD43B;"></i> About Us</p>
+                <p><i class="fa-regular fa-hand-point-right" style="color: #FFD43B;"></i> Contact Us</p>
+                <P> <i class="fa-regular fa-hand-point-right" style="color: #FFD43B;"></i> Booking</P>
+                <p> <i class="fa-regular fa-hand-point-right" style="color: #FFD43B;"></i> Full Menu</p>
+            </div>
+            <div class="footer11">
+                <p style="font-weight: 800;font-size: larger;"><i class="fa-solid fa-address-card fa-lg" style="color: #63E6BE;"></i> Contact Us</p>
+                <p><span><i class="fa-solid fa-location-dot fa-lg" style="color: #FFD43B;top: 0;background: none;margin-right: 10px;"></i></span> Diestsestraat 136, 3000 Leuven</p>
+                <p><span><i class="fa-solid fa-phone fa-lg" style="color: #FFD43B;margin-right: 10px;background: none;"></i>  </span> +2514 9561 3315</p>
+                <p><span><i class="fa-regular fa-envelope fa-lg" style="color: #FFD43B;margin-right: 10px;background: none;"></i></span>  contact@ethiopian-restaurant.be</p>
+                <div style="display: flex;gap: 10px;">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+            <div class="footer11">
+                <p style="font-weight: 800;font-size: larger;"><i class="fa-regular fa-clock fa-lg" style="color: #63E6BE;"></i> Opening Houre</p>
+                <p style="font-weight: 500;">Mondey <br><span>Closed</span></p>
+                <p style="font-weight: 500;">Tuesday - Friday: <br><span>
+                    12:00 PM- 10:00 PM</span></p>
+                <p style="font-weight: 500;">Saturday: <br><span>
+                    10:00 AM - 10:00 PM</span></p>   
+                <p style="font-weight: 500;">Sunday <br> <span>
+                    12:00 PM - 08:00 PM</span></p> 
+            </div>
+        </div>
+    </div>
+    <div id="aa">
+        <p style="text-align: center;font-weight: 300;font-size: x-small;">© 2024 Habesha Cafe All Rights Reserved</p>
+    </div>
+</body>
+</html>

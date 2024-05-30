@@ -1,0 +1,84 @@
+#menu{
+    width: 100%;
+    float: left;
+}
+.menu1{
+    width: 70%;
+    margin:0 15% 0 15%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../image/food1.jpg')no-repeat;
+    background-size: cover;    
+}
+.menua{
+    width: 100%;
+    float: left;
+}
+.menua1{
+    width: 70%;
+    margin:10vh 15% 0 15%;
+}
+.menua1 .bton{
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    color: #fff;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: darkolivegreen;
+}
+.actv{
+    background-color: goldenrod;
+}
+.div1{
+    width: 100%;
+    height: auto;
+    
+}
+.asd{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.mainmenu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    justify-content: center;
+    gap: 20px;
+}
+.mms1{
+    height: auto;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-top: 5vh;
+}
+ .mms1 img{
+    border-radius: 10px;
+    display: ;
+    height: auto;
+    width: 100%;
+}
+.mms1 .overlay{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background:transparent;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+    transition: .5s ease;   
+    background:rgba(255, 255, 255, 0.279);
+    backdrop-filter: blur(30px);
+}
+.mms1:hover .overlay{
+    height: 80%;
+}
+
+  

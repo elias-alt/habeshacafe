@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=McLaren&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <script defer src="./js/index.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <div class="navmobile" onclick="display()">
+            <span class="spana"></span>
+            <span class="spanb"></span>
+            <span class="spanc"></span>
+        </div>
+        <div class="sidenavb" >
+            <a class="sidea" href="" onclick="close()">X</a>
+            <img src="./image/logo1.png" alt="logo" width="150px" height="25px" style="float: left; cursor: pointer; margin-top: 5vh;margin-left: 5vh;">
+            <ul class="sul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="Order.html">Order</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+            <div class="dropdown" style="margin-left: 5vh;margin-bottom: 5vh;">
+                <button style="    background-color: rgb(218, 218, 213);" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Language
+                </button>
+                <ul class="dropdown-menu" style="color: #555;">
+                  <li><a class="dropdown-item" href="#">EN</a></li>
+                </ul>
+              </div>
+            <div class="cont" style="margin-left: 5vh;">
+                <p style="font-size: 12px;"><i class="fa-solid fa-phone"></i> +2514 9561 3315</p>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+        <div class="logo">
+            <a href="./index.html" style="text-decoration: none;"><img src="./image/logo1.png" alt="logo" width="auto" height="35px" style="cursor: pointer;"></a>
+        </div>
+        <div class="social">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-phone"></i>
+            <p style="font-size: 12px;">+2514 9561 3315</p>
+        </div>
+        <ul class="ulul">
+            <li class="lili"><a href="index.html">Home</a></li>
+            <li class="lili"><a href="booking.html">Booking</a></li>
+            <li class="lili"><a href="Order.html">Order</a></li>
+            <li class="lili"><a href="catering.html">Catering</a></li>
+            <li class="lili"><a href="contactus.html">Contact Us</a></li>
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    lang
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">EN</a></li>
+                  </ul>
+                </div>
+              </div>
+        </ul>
+        
+    </div>
+    <div id="header">
+        <div class="header1 left">
+            <p class="p" style="font-weight: bolder;font-size: 2.5rem;">Wellcome To Habesha Cafe</p>
+            <p style="font-weight: bolder;font-size: 1.7rem;color: #555;">Ethiopian Authentic food and coffe house</p>
+            <p style="font-weight: bolder;font-size: 1.7rem;">Enjoy Our Delicious Meal</p>
+            <a href="./booking.html">BOOK TABLE</a>
+        </div>
+        <div  id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./image/food1.jpg" class="d-block w-100" alt="..." width="100%" height="600px" >
+            
+            </div>
+            <div class="carousel-item">
+                <img src="./image/coffee1.jpg" class="d-block w-100" alt="..." width="100%" height="600px" >
+            </div>
+            <div class="carousel-item">
+                <img src="./image/food3.jpg" class="d-block w-100" alt="..." width="100%" height="600px" >
+            </div>
+            <div class="carousel-item">
+                <img src="./image/coffee2.jpg" class="d-block w-100" alt="..." width="100%" height="600px" >
+            </div>
+            <div class="carousel-item">
+                <img src="./image/food3.jpg" class="d-block w-100" alt="..." width="100%" height="600px" >
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div id="aboutus">
+        <div class="aboutus1">
+            <div style="padding-top: 50px;padding-bottom: 50px;margin-top: 5vh;">
+                <div style="margin-bottom: 20px;display: flex;align-items: flex-end;gap: 20px;">
+                    <img class="left" src="./image/food3.jpg" alt="" width="200px" height="250px">
+                    <img class="right" src="./image/coffee1.jpg" alt="" width="150px" height="150px">
+                </div>
+                <div style="display: flex;align-items: flex-start;gap: 20px;">
+                   <img class="botom" src="./image/coffee2.jpg" alt="" width="150px" height="150px">
+                    <img class="right" src="./image/food2.jpg" alt="" width="200px" height="250px">
+                </div>
+            </div>
+            <div style="display: flex;align-items: center;justify-content: center;padding: 50px; flex-direction: column;">
+                <p class="right" style="font-weight: bold;font-size: 1.7rem;">About Us</p>
+                <p class="botom">Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s, when an unknown
+                     printer took a galley of type and scrambled it to make a 
+                     type specimen book. It has survived not only five centuries,
+                     <br>
+                     <br>
+                      but also the leap into electronic typesetting, remaining 
+                      essentially unchanged. It was popularised in the 1960s 
+                      with the release of Letraset sheets containing Lorem 
+                      Ipsum passages, and more recently with desktop publishing
+                       software 
+                    like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <div style="width: 100%;float: left;display: flex;align-items: center; gap: 20px;">
+                        <p class="left" style="width: auto; height: auto;font-weight: bold;
+                        font-size: 1.7rem; border-left: 5px solid #eff704;padding-left: 10px;color: #eff704;">10</p>
+                        <p class="left" >YEARS OF <br><span style="font-weight: bolder;">EXPERINCE</span> </p>    
+                    </div>
+             </div>
+        </div>
+    </div>
+    <div id="card">
+        <div class="card1">
+            <p style="font-weight: bold;font-size: 1.7rem;text-align: center;">Why Us</p>
+            <div class="card11">
+                <div class="cards right">
+                    <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #FFD43B;"></i>
+                    <p style="font-weight: bold;font-size: 1.5rem;">Online Order</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+                <div class="cards right">
+                    <i class="fa-solid fa-utensils fa-2xl" style="color: #FFD43B;"></i>
+                    <p style="font-weight: bold;font-size: 1.5rem;">Quality Food & Drink</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+                <div class="cards right">
+                    <i class="fa-solid fa-bell-concierge fa-2xl" style="color: #FFD43B;"></i>
+                   <p style="font-weight: bold;font-size: 1.5rem;"> 24/7 service</p>
+                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu">
+        <div class="menu1">
+            <div class="menu11" style="margin-bottom: 5vh;">
+                <p class="left" style="font-weight: bold;font-size: 1.7rem;text-align: center;">Our Menu</p>
+                <p class="right" style="font-weight: bold;font-size: 1.5rem;text-align: center;color: green;">Most Popular</p>
+                <a href="menu.html">See All</a>
+            </div>
+            <div class="menumenu">
+                <div class="menu12">
+                    <div class="menu_popular left">
+                        <div class="popular_img">
+                            <img src="./image/food2.jpg" alt="img" width="100px" height="100px">
+                        </div>
+                        <div class="popular_cont">
+                           <p style="border-bottom: 1px solid #ddd;padding:10px 20px 20px 20px;font-weight: bold;">Firfir
+                            <span style="float: right;color: #eff704;font-weight: 800;" >$8.00 </span></p>
+                            <p style="padding-left: 10px;font-weight: 200;">Pieces of injera in spicy sauce with Ethiopian butter.</p>    
+                        </div>
+                   </div>
+                   <div class="menu_popular left">
+                        <div class="popular_img">
+                            <img src="./image/doro.jfif" alt="img" width="100px" height="100px">
+                        </div>
+                        <div class="popular_cont">
+                        <p style="border-bottom: 1px solid #ddd;padding:10px 20px 20px 20px;font-weight: bold;">Doro Wot
+                            <span style="float: right;color: #eff704;font-weight: 800;" >$20.00 </span></p>
+                            <p style="padding-left: 10px;font-weight: 200;">A traditional Ethiopian dish with chicken and egg in a (very) spicy sauce. Prepared with Ethiopian butter.</p>    
+                        </div>
+                    </div>
+                    <div class="menu_popular left">
+                        <div class="popular_img">
+                            <img src="./image/tibs.jfif" alt="img" width="100px" height="100px">
+                        </div>
+                        <div class="popular_cont">
+                        <p style="border-bottom: 1px solid #ddd;padding:10px 20px 20px 20px;font-weight: bold;">Tibs
+                            <span style="float: right;color: #eff704;font-weight: 800;" >$17.00 </span></p>
+                            <p style="padding-left: 10px;font-weight: 200;">Choice between beef and lamb. Prepared with fresh peppers, herbs, slices of tomatoes and Ethiopian butter. Can be prepared both mildly and spicy.</p>    
+                        </div>
+                    </div>
+                    <div class="menu_popular left">
+                        <div class="popular_img">
+                            <img src="./image/shiro.jfif" alt="img" width="100px" height="100px">
+                        </div>
+                        <div class="popular_cont">
+                        <p style="border-bottom: 1px solid #ddd;padding:10px 20px 20px 20px;font-weight: bold;">SHiro Wet
+                            <span style="float: right;color: #eff704;font-weight: 800;" >$13.00 </span></p>
+                            <p style="padding-left: 10px;font-weight: 200;">A sauce with Ethiopian spicy herbs and ground chickpeas.</p>    
+                        </div>
+                    </div>
+                </div>
+                <div class="menu12">
+                    <div class="menu_popular right">
+                        <div class="popular_img">
+                            <img src="./image/tibsfirfr.jfif" alt="img" width="100px" height="100px">
+                        </div>
+                        <div class="popular_cont">
+                        <p style="border-bottom: 1px solid #ddd;padding:10px 20px 20px 20px;font-weight: bold;">Tibs Firfir
+                            <span style="float: right;color: #eff704;font-weight: 800;" >$17.00 </span></p>
+                            <p style="padding-left: 10px;font-weight: 200;">A sauce prepared with Tibse (see description) and pieces of injera.</p>    
+                        </div>
+                    </div>
+                    <div class="menu_popular right">
+                        <div class="popular_img">
+                            <img src="./image/food2.jpg" alt="img" width="100px" height="100px">
+                        </div>
+                        <div class="popular_cont">
+                        <p style="border-bottom: 1px solid #ddd;padding:10px 20px 20px 20px;font-weight: bold;">quanta Firfir
+                            <span style="float: right;color: #eff704;font-weight: 800;" >$8.00 </span></p>
+                            <p style="padding-left: 10px;font-weight: 200;">Pieces of injera in spicy sauce with Ethiopian butter.</p>    
+                        </div>
+                    </div>
+                    <div class="menu_popular right">
+                        <div class="popular_img">
+                            <img src="./image/kitfo.jfif" alt="img" width="100px" height="100px">
+                        </div>
+                        <div class="popular_cont">
+                        <p style="border-bottom: 1px solid #ddd;padding:10px 20px 20px 20px;font-weight: bold;">Kitfo
+                            <span style="float: right;color: #eff704;font-weight: 800;" >$17.00 </span></p>
+                            <p style="padding-left: 10px;font-weight: 200;">Spicy seasoned raw beef with the choice of frying (average done and well fried). Prepared with herbs and Ethiopian butter.</p>    
+                        </div>
+                    </div>
+                    <div class="menu_popular right">
+                        <div class="popular_img">
+                            <img src="./image/ful.jfif" alt="img" width="100px" height="100px">
+                        </div>
+                        <div class="popular_cont">
+                        <p style="border-bottom: 1px solid #ddd;padding:10px 20px 20px 20px;font-weight: bold;">Ful
+                            <span style="float: right;color: #eff704;font-weight: 800;" >$10.00 </span></p>
+                            <p style="padding-left: 10px;font-weight: 200;">A dish with brown beans in garlic, onions, tomatoes and peppers. Served with baguette.</p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="testimonial">
+        <div class="testimonial1">
+            <div>
+                <p class="left" style="font-weight: bold;font-size: 1.7rem;text-align: center;"">Our Clients Say!!!</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            </div>
+            <div class="testimonial11">
+                <div class="tstmnl botom">
+                    <div style="display: flex;gap: 20px;">
+                        <img style="border-radius: 50%;" src="./image/test3.jfif" alt="" width="70px" height="70px" >
+                        <div>
+                            <p style="font-weight: 800;">samrawit</p>
+                            <p>acctress</p>
+                        </div>
+                    </div>
+                    <p style="font-weight: 300;">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+                <div class="tstmnl botom">
+                    <div style="display: flex;gap: 20px;">
+                        <img style="border-radius: 50%;" src="./image/test2.jfif" alt="" width="70px" height="70px" >
+                        <div>
+                            <p style="font-weight: 800;">Hagos</p>
+                            <p>bussiness man</p>
+                        </div>
+                    </div>
+                    <p style="font-weight: 300;">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+                <div class="tstmnl botom">
+                    <div style="display: flex;gap: 20px;">
+                        <img style="border-radius: 50%;" src="./image/test5.jfif" alt="" width="70px" height="70px" >
+                        <div>
+                            <p style="font-weight: 800;">David</p>
+                            <p>Teacher</p>
+                        </div>
+                    </div>
+                    <p style="font-weight: 300;">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+                <div class="tstmnl botom">
+                    <div style="display: flex;gap: 20px;">
+                        <img style="border-radius: 50%;" src="./image/face1.jpg" alt="" width="70px" height="70px" >
+                        <div>
+                            <p style="font-weight: 800;">Julia</p>
+                            <p>doctor</p>
+                        </div>
+                    </div>
+                    <p style="font-weight: 300;">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer1">
+            <div class="footer11">
+                <p style="font-weight: 800;font-size: larger;"><i class="fa-solid fa-house fa-lg" style="color: #63E6BE;"></i> Habesha Cafe</p>
+                <p> <i class="fa-regular fa-hand-point-right" style="color: #FFD43B;"></i> About Us</p>
+                <p><i class="fa-regular fa-hand-point-right" style="color: #FFD43B;"></i> Contact Us</p>
+                <P> <i class="fa-regular fa-hand-point-right" style="color: #FFD43B;"></i>Booking</P>
+                <p> <i class="fa-regular fa-hand-point-right" style="color: #FFD43B;"></i> Full Menu</p>
+            </div>
+            <div class="footer11">
+                <p style="font-weight: 800;font-size: larger;"><i class="fa-solid fa-address-card fa-lg" style="color: #63E6BE;"></i> Contact Us</p>
+                <p><span><i class="fa-solid fa-location-dot fa-lg" style="color: #FFD43B;top: 0;background: none;margin-right: 10px;"></i></span> Diestsestraat 136, 3000 Leuven</p>
+                <p><span><i class="fa-solid fa-phone fa-lg" style="color: #FFD43B;margin-right: 10px;background: none;"></i>  </span> +2514 9561 3315</p>
+                <p><span><i class="fa-regular fa-envelope fa-lg" style="color: #FFD43B;margin-right: 10px;background: none;"></i></span>  contact@ethiopian-restaurant.be</p>
+                <div style="display: flex;gap: 10px;">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+            <div class="footer11">
+                <p style="font-weight: 800;font-size: larger;"><i class="fa-regular fa-clock fa-lg" style="color: #63E6BE;"></i> Opening Houre</p>
+                <p style="font-weight: 500;">Mondey <br><span>Closed</span></p>
+                <p style="font-weight: 500;">Tuesday - Friday: <br><span>
+                    12:00 PM- 10:00 PM</span></p>
+                <p style="font-weight: 500;">Saturday: <br><span>
+                    10:00 AM - 10:00 PM</span></p>   
+                <p style="font-weight: 500;">Sunday <br> <span>
+                    12:00 PM - 08:00 PM</span></p> 
+            </div>
+        </div>
+    </div>
+    <div id="aa">
+        <p style="text-align: center;font-weight: 300;font-size: x-small;">© 2024 Habesha Cafe All Rights Reserved</p>
+    </div>
+</body>
+</html>

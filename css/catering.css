@@ -1,0 +1,59 @@
+#catering{
+    width: 100%;
+    float: left;
+}
+.catering1{
+    width: 70%;
+    margin:0 15% 0 15%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../image/coffee2.jpg')no-repeat;
+    background-size: cover;    
+}
+.cater{
+    width: 100%;
+    float: left;
+}
+.cater1{
+    width: 70%;
+    margin:10vh 15% 0 15%;
+    height: ;
+    background-color: ;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    justify-content: center;
+    gap: 20px;
+}
+.cater11{
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 0px 9px -3px rgba(66, 68, 90, 1);
+
+}
+.cater12{
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 0px 9px -3px rgba(66, 68, 90, 1);
+
+}
+.menulist{
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 0px 9px -3px rgba(66, 68, 90, 1);
+}
+.menulist:hover{
+    box-shadow: none;
+}
+.menulist:hover i{
+   margin-left: 5px;
+}
